@@ -1,0 +1,187 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/_custom"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "CLXRegular"
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.header
+	&__top
+		padding-top: 34px
+		padding-bottom: 30px
+	&__left
+	&__center
+	&__right
+	&__bottom
+		border-top: 2px solid #919191
+		border-bottom: 2px solid #919191
+		position: relative
+	&__nav
+	&__sub-nav
+		position: absolute
+		top: 50px
+		left: 0
+		right: 0
+		background-color: rgba(255,255,255,.91)
+		padding: 20px 0
+		display: block
+		z-index: 990
+
+.phone
+	font-size: 0
+	padding-left: 30px
+	padding-top: 8px
+	&__item
+		display: inline-block
+		padding: 0 12px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 2px
+			height: 20px
+			background-color: #000
+			position: absolute
+			left: -1px
+			top: 50%
+			margin-top: -10px
+		&:first-child
+			padding-left: 0
+			&::before
+				display: none
+	&__link
+		font-family: "CLXSemiBold"
+		display: block
+		color: #000
+		font-size: 20px
+		letter-spacing: 0.02em
+		line-height: 100%
+.logo
+	text-align: center
+	&__link
+		height: 37px
+		width: 369px
+		display: inline-block
+	&__img
+		display: block
+
+.personal
+	text-align: right
+	width: 100%
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-left: 25px
+		position: relative
+		&:first-child
+			padding-left: 0
+	&__link
+		display: block
+		width: 33px
+		height: 37px
+	&__count
+		position: absolute
+		width: 25px
+		height: 25px
+		border-radius: 50%
+		-webkit-border-radius: 50%
+		background-color: #cd0000
+		right: -11px
+		bottom: -11px
+		color: #fff
+		z-index: 1
+		display: block
+		font-size: 16px
+		line-height: 25px
+		text-align: center
+		font-family: "CLXSemiBold"
+.nav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	&__item
+	&__link
+		line-height: 48px
+		font-size: 18px
+		color: #000
+		text-transform: uppercase
+		font-family: "CLXSemiBold"
+		letter-spacing: 0.1em
+		padding: 0 43px 0 30px
+		display: block
+		position: relative
+		&::after
+			content: '<'
+			position: absolute
+			right: 32px
+			-o-transform: rotate(-90deg)
+			-ms-transform: rotate(-90deg)
+			-moz-transform: rotate(-90deg)
+			-webkit-transform: rotate(-90deg)
+			transform: rotate(-90deg)
+			font-family: "CLXBook"
+		&:hover
+			text-decoration: none
+			color: #000
+			background-color: #efefef
+		&:active, &:focus
+			color: #000
+			text-decoration: none
+		&-active
+			background-color: #efefef
+
+	&__search
+		width: 34px
+		height: 29px
+		display: block
+		margin-top: 9.5px
+		padding: 0
+		&::after
+			display: none
+	&__list
+		padding: 15px 30px
+		&-item
+			display: block
+			width: 100%
+			text-align: left
+		&-link
+			color: #000
+			font-size: 16px
+			font-family: "CLXBook", sans-serif
+			display: inline-block
+			&:hover
+				text-decoration: underline
+				color: #000
+	&__cat
+		display: block
+		overflow: hidden
+		height: 256px
+		&-img
+			display: block
+			width: 100%
+		&-title
+			position: absolute
+			left: 0
+			right: 0
+			width: 100%
+			box-sizing: border-box
+			text-align: center
+			bottom: 50px
+			font-size: 31px
+			color: #fff
+			padding: 0 20px
+			text-transform: uppercase
+			letter-spacing: 0.025em
+			font-family: "CLXSemiBold", sans-serif
