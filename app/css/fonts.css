@@ -15,3 +15,9 @@
   font-family: "CLXBook";
   src: url(../fonts/CorsicaLX/CORSICALX-BOOK.otf);
 }
+
+/* font-family: "BicubikRegular" */
+@font-face {
+  font-family: "BicubikRegular";
+  src: url(../fonts/Bicubik/BicubikRegular.ttf);
+}
