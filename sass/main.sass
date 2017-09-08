@@ -41,6 +41,24 @@ body
 	&__line
 		&-gray
 			background-color: #dbdbdb
+	&__s-title
+		text-align: center
+		padding: 30px 0
+	&__block
+		position: relative
+		&-bg
+			overflow: hidden
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(225,225,225,.88)
+				z-index: -1
 
 .footer
 	&__top
@@ -79,6 +97,9 @@ body
 		font-size: 20px
 		letter-spacing: 0.02em
 		line-height: 100%
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #000
 .logo
 	text-align: center
 	&__link
@@ -126,7 +147,15 @@ body
 	display: flex
 	justify-content: space-between
 	-webkit-justify-content: space-between
+	position: relative
+	padding-right: 90px
+	&-flex
+		display: block
+		width: 100%
+		text-align: center
+		padding: 0
 	&__item
+		display: inline-block
 	&__link
 		line-height: 48px
 		font-size: 18px
@@ -158,13 +187,18 @@ body
 			background-color: #efefef
 
 	&__search
-		width: 34px
-		height: 29px
 		display: block
-		margin-top: 9.5px
-		padding: 0
-		&::after
-			display: none
+		position: absolute
+		right: 0
+		top: 0
+		&-link
+			width: 34px
+			height: 29px
+			display: inline-block
+			margin-top: 9.5px
+			padding: 0
+			&::after
+				display: none
 	&__list
 		padding: 15px 30px
 		&-item
@@ -185,7 +219,8 @@ body
 		height: 256px
 		&-img
 			display: block
-			width: 100%
+			min-width: 100%
+			min-height: 100%
 		&-title
 			position: absolute
 			left: 0
@@ -233,7 +268,8 @@ body
 	position: relative
 	display: block
 	&__img
-		width: 100%
+		min-height: 100%
+		min-width: 100%
 	&__text
 		position: absolute
 		top: 50%
@@ -306,6 +342,8 @@ body
 		font-size: 34px
 
 .tagsItem
+	margin-bottom: 30px
+	display: block
 	&__img
 		overflow: hidden
 		img
@@ -316,7 +354,7 @@ body
 .tagsmore
 	text-align: center
 	width: 100%
-	padding: 36px 0
+	padding: 6px 0 36px
 	&__link
 		display: inline-block
 		text-transform: uppercase
@@ -452,3 +490,39 @@ body
 		color: #000
 		font-family: "CLXBook", sans-serif
 		letter-spacing: 0.025em
+
+.s-title
+	color: #000
+	font-size: 30px
+	text-transform: uppercase
+	letter-spacing: 0.025em
+	line-height: 40px
+	font-family: "CLXSemiBold", sans-serif
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.m-style
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	position: relative
+	&__item
+	&__link
+	&__title
+		display: block
+		width: 100%
+		text-align: center
+	&__img
+	&__bg
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		z-index: -2

@@ -54,4 +54,9 @@ $(document).ready(function() {
 		$('.m6').toggleClass('hidden');
 		return false;
 	});
+
+	$('.personal__item-mob .personal__link-mob').on('click', function() {
+		$('.header__bottom').fadeToggle();
+		return false;
+	});
 });
