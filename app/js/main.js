@@ -59,4 +59,10 @@ $(document).ready(function() {
 		$('.header__bottom').fadeToggle();
 		return false;
 	});
+
+	$('.m-style__item').hover(function() {
+		$(this).children().children('.m-style__loop').stop(false, true).fadeIn();
+	}, function() {
+		$(this).children().children('.m-style__loop').stop(false, true).fadeOut();
+	});
 });
