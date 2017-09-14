@@ -214,13 +214,15 @@ body
 		right: 0
 		top: 0
 		&-link
-			width: 34px
-			height: 29px
 			display: inline-block
-			margin-top: 9.5px
 			padding: 0
+			.fa
+				font-size: 30px
+				line-height: 44px
 			&::after
 				display: none
+			&:hover
+				background-color: transparent
 	&__list
 		padding: 15px 30px
 		&-item
@@ -639,10 +641,13 @@ body
 	display: block
 	width: 100%
 	position: relative
+	height: 580px
+	margin-bottom: 20px
 	&__img
 		overflow: hidden
 		height: 473px
 		position: relative
+		cursor: pointer
 	&__photo
 		height: 100%
 		width: auto
@@ -739,3 +744,102 @@ body
 			color: #fff
 			letter-spacing: 0.025em
 			font-family: "CLXSemiBold", sans-serif
+	&__buttons
+		position: absolute
+		bottom: 20px
+		left: 20px
+		font-size: 0
+
+	&__loop
+		display: inline-block
+		.fa
+			font-size: 30px
+			color: #878787
+
+	&__fav
+		display: inline-block
+		margin-left: 16px
+		.fa
+			font-size: 30px
+			color: #878787
+
+	&__icon
+		position: absolute
+		right: 20px
+		top: 20px
+	&__like
+		&-off
+			.fa
+				color: #878787 !important
+		.fa
+			font-size: 30px
+			color: #f00
+
+.m-prods
+	&__popup
+		position: fixed
+		left: 0
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		width: 1050px
+		margin: 0 auto
+		background-color: #fff
+		border: 1px solid #4b4b4b
+		z-index: 999
+	&__wrapper
+		padding-bottom: 70px
+		padding-right: 38px
+		padding-top: 65px
+		padding-left: 64px
+
+.l-slider
+	.owl-nav
+		position: absolute
+		left: 0
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		div
+			width: 24px
+			height: 41px
+			display: block
+			text-indent: -9999px
+			z-index: 2
+	.owl-prev
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		left: 26px
+		background-image: url(../img/icons/prev-arrow.png)
+	.owl-next
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		right: 26px
+		background-image: url(../img/icons/next-arrow.png)
+	&__nav
+		padding-top: 30px
+
+.sliderNav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	font-size: 0
+	&__item
+		width: 105px
+		height: 117px
+		overflow: hidden
+		display: inline-block
+	&__img
+		width: 100%
+		height: auto
+		display: block
