@@ -53,3 +53,24 @@ ol, ul
 		background-color: #fff
 		border-radius: 50%
 		display: block
+
+.fancybox-close-small
+	width: 38px
+	height: 38px
+	background-image: url(../img/icons/close.png)
+	background-repeat: no-repeat
+	background-position: center center
+	top: 23px
+	right: 23px
+	&::after
+		display: none
+
+.fancybox-is-open
+	.fancybox-bg
+		opacity: 1
+		background-color: transparent
+
+.cardslider2,
+.cardslider3,
+.cardslider4
+	display: none

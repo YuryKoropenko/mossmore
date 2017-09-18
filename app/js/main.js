@@ -65,4 +65,32 @@ $(document).ready(function() {
 	}, function() {
 		$(this).children().children('.m-style__loop').stop(false, true).fadeOut();
 	});
+
+	$('.cardsliderbtn1').on('click', function() {
+		$('.r-description__color-item').removeClass('r-description__color-item-active');
+		$(this).addClass('r-description__color-item-active');
+		$('.m-prods__l-slider').hide();
+		$('.cardslider1').show();
+	});
+
+	$('.cardsliderbtn2').on('click', function() {
+		$('.r-description__color-item').removeClass('r-description__color-item-active');
+		$(this).addClass('r-description__color-item-active');
+		$('.m-prods__l-slider').hide();
+		$('.cardslider2').show();
+	});
+
+	$('.cardsliderbtn3').on('click', function() {
+		$('.r-description__color-item').removeClass('r-description__color-item-active');
+		$(this).addClass('r-description__color-item-active');
+		$('.m-prods__l-slider').hide();
+		$('.cardslider3').show();
+	});
+
+	$('.cardsliderbtn4').on('click', function() {
+		$('.r-description__color-item').removeClass('r-description__color-item-active');
+		$(this).addClass('r-description__color-item-active');
+		$('.m-prods__l-slider').hide();
+		$('.cardslider4').show();
+	});
 });

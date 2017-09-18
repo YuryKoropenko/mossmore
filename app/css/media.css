@@ -111,7 +111,29 @@
   .personal {
     margin-left: -25px;
   }
+  .m-prods__img {
+    height: 370px;
+  }
+  .m-prods {
+    height: 480px;
+  }
+  .m-style__item {
+    padding: 0 10px;
+  }
+  .main__block-bg {
+    min-height: auto;
+  }
+  .main__m-style {
+    margin-bottom: 130px;
+  }
   /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1080px) {
+  .m-prods__popup {
+    width: 95%;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -188,6 +210,23 @@
   .personal {
     margin-left: 0;
   }
+  .main__m-prods {
+    padding-right: 0;
+  }
+  .owl-carousel .owl-item img {
+    width: auto;
+    max-width: 100%;
+    display: inline-block;
+  }
+  .l-slider__item {
+    text-align: center;
+  }
+  .m-prods__r-description {
+    margin-top: 20px;
+  }
+  .m-prods__wrapper {
+    padding: 20px;
+  }
   /**/
 }
 
@@ -255,11 +294,66 @@
   .nav__search {
     position: static;
   }
+  .m-prods {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .main__m-sort {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .main__infoFilter {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .fancybox-close-small {
+    top: -9px;
+    right: -7px;
+    transform: scale(0.3);
+  }
   /**/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .r-description__color-top {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .r-description__razm-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .r-description__razm-list {
+    width: 100%;
+    text-align: center;
+  }
+  .r-description__razm-description {
+    width: 100%;
+  }
+  .r-description__rost-title {
+    width: 100%;
+    text-align: center;
+  }
+  .r-description__rost-list {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .r-description__coli-title {
+    width: 100%;
+    text-align: center;
+  }
+  .r-description__coli-block {
+    display: inline-block;
+    width: auto;
+    float: none;
+  }
+  .r-description__coli {
+    text-align: center;
+  }
   /**/
 }
 
