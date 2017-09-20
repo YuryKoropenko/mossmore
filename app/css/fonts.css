@@ -10,6 +10,12 @@
   src: url(../fonts/CorsicaLX/CORSICALX-SEMIBOLD.otf);
 }
 
+/* font-family: "CLXBold" */
+@font-face {
+  font-family: "CLXBold";
+  src: url(../fonts/CorsicaLX/CORSICALX-BOLD.otf);
+}
+
 /* font-family: "CLXSemiBook" */
 @font-face {
   font-family: "CLXBook";
