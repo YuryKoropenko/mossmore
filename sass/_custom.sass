@@ -80,3 +80,51 @@ ol, ul
 	background-image: url(../img/icons/kk.png)
 	background-repeat: no-repeat
 	background-position: center center
+
+.ui-selectmenu-text
+	font-size: 14px
+	color: #000
+	letter-spacing: 0.025em
+	line-height: 35px
+	text-transform: uppercase
+	display: inline-block
+	font-family: "CLXSemiBold", sans-serif
+	text-align: center
+	margin-right: 0
+	padding-right: 15px
+	position: relative
+	&::after
+		content: '<'
+		position: absolute
+		right: 4px
+		top: 0
+		transform: rotate(-90deg)
+		-webkit-transform: rotate(-90deg)
+		font-family: "CLXBook" !important
+
+.ui-selectmenu-button.ui-button
+	width: 260px
+	border-radius: 0 !important
+	background-color: transparent
+	float: right
+	padding: 0 6px
+	text-align: center
+
+.ui-button
+	height: 37px
+	border: 1px solid #000
+	&:hover, &:focus, &:active
+		border-color: #000
+
+.ui-selectmenu-icon
+	display: none !important
+
+.ui-widget.ui-widget-content
+	border-color: #000
+
+.ui-menu .ui-menu-item-wrapper
+	padding: 6px
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	background-color: #000
+	border-color: #000
