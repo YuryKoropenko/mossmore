@@ -155,6 +155,10 @@ ol, ul {
   border-color: #000;
 }
 
+textarea {
+  resize: none;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -2383,6 +2387,10 @@ body {
   letter-spacing: 0.025em;
 }
 
+.m-reviews__block {
+  margin-bottom: 90px;
+}
+
 .m-reviews__subtitle {
   color: #000;
   font-size: 15px;
@@ -2401,6 +2409,10 @@ body {
   font-size: 14px;
   letter-spacing: 0.025em;
   margin-right: 40px;
+}
+
+.m-reviews__line-text-last {
+  margin-left: 46px;
 }
 
 .m-reviews__line-input {
@@ -2443,4 +2455,209 @@ body {
 .m-reviews__button input:hover {
   background-color: #000;
   color: #fff;
+}
+
+.c-prods__l-slider {
+  width: 610px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+
+.c-prods__r-description {
+  width: 530px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+
+.c-description__color {
+  margin-left: -86px;
+  margin-right: -86px;
+  width: auto;
+}
+
+.c-description__razm-list {
+  float: left;
+  margin-left: -25%;
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.c-description__razm-list .r-description__coli-block {
+  float: none;
+  width: auto;
+  display: inline-block;
+}
+
+.c-description__price {
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.c-description__center {
+  margin-bottom: 10px;
+}
+
+.c-description__bottom {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.card-buttons {
+  text-align: center;
+}
+
+.card-buttons__top {
+  width: 258px;
+  height: 46px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+}
+
+.card-buttons__bottom {
+  width: 258px;
+  height: 46px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: transparent;
+  color: #000;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card-tabs__link.active {
+  color: #000;
+}
+
+.card-tabs__top {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.card-tabs__link {
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  color: #b3b3b3;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+}
+
+.card-tabs__bottom {
+  padding: 10px 0;
+}
+
+.m-lmodel__title {
+  color: #000;
+  font-size: 21px;
+  letter-spacing: 0.025em;
+  font-family: "CLXSemiBold", sans-serif;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.m-lmodel__list {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 110px;
+}
+
+.m-lmodel__item {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.m-lmodel__item .m-prods__photo {
+  width: auto !important;
+}
+
+.m-lcomment__title {
+  font-size: 14px;
+  display: block;
+  width: 1055px;
+  margin: 0 auto;
+  color: #000;
+  letter-spacing: 0.025em;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 10px;
+}
+
+.m-lcomment__block {
+  width: 1055px;
+  margin: 0 auto;
+}
+
+.m-lcomment__block .m-reviews__item {
+  width: 100%;
+  border-bottom: none;
+  padding: 5px 0;
+}
+
+.pcorz {
+  text-align: center;
+  padding-bottom: 130px;
+  padding-top: 45px;
+}
+
+.pcorz__img {
+  display: inline-block;
+}
+
+.pcorz__title {
+  display: inline-block;
+  color: #000;
+  font-size: 17% 0ex;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
+
+.pcorz__button {
+  display: inline-block;
+  width: 280px;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  margin-top: 20px;
+}
+
+.m-offzakaz__top {
+  padding-bottom: 35px;
+  text-align: center;
+  border-bottom: 3px solid #ebebeb;
+  margin-bottom: 40px;
+}
+
+.m-offzakaz__info {
+  display: inline-block;
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 0.025em;
+  font-family: "CLXBook", sans-serif;
+}
+
+.m-offzakaz__info a {
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+}
+
+.m-offzakaz__info a:hover, .m-offzakaz__info a:focus, .m-offzakaz__info a:active {
+  text-decoration: underline;
+  color: #000;
 }
