@@ -92,6 +92,9 @@ body
 	&__m-vhod
 		padding: 70px 56px 90px 30px
 		position: relative
+	&__m-radio
+		text-align: center
+		padding-bottom: 25px
 
 .footer
 	&__top
@@ -1908,8 +1911,171 @@ body
 				text-decoration: underline
 				color: #000
 	&__row
+		width: 372px
+		margin: 0 auto 30px
 	&__label
+		width: 112px
+		display: inline-block
+		height: 37px
+		position: relative
+		span
+			font-size: 16px
+			line-height: 18px
+			letter-spacing: 0.025em
+			color: #292929
+			font-family: "CLXSemiBold", sans-serif
+			position: absolute
+			right: 28px
+			text-align: right
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
 	&__input
+		display: inline-block
+		width: 260px
+		height: 37px
+		border: 1px solid #000
+		float: right
+		color: #000
+		font-size: 16px
+		padding: 0 6px
 	&__block
+		width: 372px
+		margin: 0 auto 30px
+		@extend .clearfix
 		.m-offzakaz__row
+			width: 50%
+			float: left
+			.m-offzakaz__input
+				width: 74px
+			&:nth-child(even)
+				.m-offzakaz__label
+					span
+						right: 14px
 	&__yslov
+		color: #a9a9a9
+		font-size: 16px
+		letter-spacing: 0.025em
+		text-decoration: underline
+		display: inline-block
+		margin-left: 120px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #a9a9a9
+
+.main__m-checkbox
+	font-size: 0
+	clear: top
+	vertical-align: top
+.m-radio
+	display: inline-block
+	width: auto
+	vertical-align: top
+	margin: 0 30px
+	&-2
+		width: 20%
+	&__input
+		display: none
+		&:checked + label:before
+			background-image: url(../img/icons/b-kk.png)
+			background-repeat: no-repeat
+			background-position: center center
+
+	&__label
+		position: relative
+		cursor: pointer
+		padding-top: 40px
+		font-size: 16px
+		color: #292929
+		letter-spacing: 0.025em
+		display: block
+		text-align: center
+		&:before
+			content: ''
+			width: 24px
+			height: 26px
+			border: 1px solid #000
+			background-color: transparent
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+
+.m-zakcomment
+	width: 646px
+	margin: 40px auto 80px auto
+	&__title
+		font-size: 16px
+		color: #000
+		letter-spacing: 0.025em
+		font-family: "CLXMedium", sans-serif
+		display: block
+		padding-bottom: 6px
+	&__textarea
+		height: 120px
+		width: 100%
+		padding: 6px
+		border: 1px solid #000
+	&__check
+		margin-top: 30px
+		margin-bottom: 20px
+	&__input
+		display: none
+		&:checked + label::after
+			background-image: url(../img/icons/kk.png)
+			background-repeat: no-repeat
+			background-position: center center
+	&__label
+		display: inline-block
+		padding-right: 28px
+		font-size: 14px
+		letter-spacing: 0.025em
+		line-height: 18px
+		position: relative
+		cursor: pointer
+		span
+			text-decoration: underline
+		&::after
+			content: ''
+			width: 14px
+			height: 15px
+			display: block
+			border: 1px solid #000
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -7.5px
+	&__buttons
+		@extend .clearfix
+	&__left
+		float: left
+		width: 286px
+		height: 50px
+		border: 1px solid #292929
+		color: #fff
+		background-color: #292929
+		text-align: center
+		text-transform: uppercase
+		font-size: 16px
+		font-family: "CLXSemiBold", sans-serif
+		letter-spacing: 0.025em
+		&:hover, &:focus, &:active
+			background-color: transparent
+			color: #292929
+	&__right
+		float: right
+		width: 286px
+		height: 50px
+		border: 1px solid #292929
+		color: #292929
+		background-color: transparent
+		text-align: center
+		text-transform: uppercase
+		font-size: 16px
+		font-family: "CLXSemiBold", sans-serif
+		letter-spacing: 0.025em
+		&:hover, &:focus, &:active
+			background-color: #292929
+			color: #fff

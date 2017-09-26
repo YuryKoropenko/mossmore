@@ -372,6 +372,10 @@
   .r-description__razm-list.c-description__razm-list {
     text-align: center;
   }
+  .m-radio-2 {
+    width: 30%;
+    margin: 0;
+  }
   /**/
 }
 
@@ -534,6 +538,38 @@
   .pcorz {
     padding-top: 0;
     padding-bottom: 20px;
+  }
+  .m-zakcomment {
+    width: 100%;
+    margin: 30px 0 30px;
+  }
+  .m-zakcomment__left,
+  .m-zakcomment__right {
+    width: 100%;
+  }
+  .m-zakcomment__right {
+    margin-top: 20px;
+  }
+  .m-zakcomment__check {
+    margin-top: 20px;
+  }
+  .m-radio-2,
+  .m-radio {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .m-offzakaz__row {
+    width: 100%;
+  }
+  .m-offzakaz__label {
+    width: 100%;
+    text-align: center;
+  }
+  .m-offzakaz__label span {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
   /**/
 }
