@@ -376,6 +376,13 @@
     width: 30%;
     margin: 0;
   }
+  .m-cont.m-cont__right {
+    display: none;
+  }
+  .m-cont__map iframe {
+    max-width: 100%;
+    width: 100%;
+  }
   /**/
 }
 
@@ -570,6 +577,32 @@
     display: block;
     width: 100%;
     text-align: center;
+    right: 0;
+  }
+  .m-offzakaz__input {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+  .m-offzakaz__block {
+    width: 100%;
+    text-align: center;
+  }
+  .m-offzakaz__block .m-offzakaz__row .m-offzakaz__input {
+    width: 100%;
+  }
+  .m-offzakaz__block .m-offzakaz__row {
+    float: none;
+    width: 100%;
+  }
+  .m-offzakaz__block .m-offzakaz__row:nth-child(2n) .m-offzakaz__label span {
+    right: 0;
+  }
+  .m-offzakaz__yslov {
+    margin-left: 0;
+  }
+  .m-cont__map iframe {
+    height: 290px;
   }
   /**/
 }
