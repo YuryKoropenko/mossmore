@@ -426,6 +426,9 @@
     padding-bottom: 15px;
     padding-top: 15px;
   }
+  .m-dostavka__item {
+    margin: 0 15px;
+  }
   /**/
 }
 
@@ -658,6 +661,27 @@
   }
   .m-sumcorz__catalog {
     width: 100%;
+  }
+  .m-dostavka__item {
+    margin: 0 0 15px 0;
+    display: block;
+  }
+  .m-dostavka__dostavka::after {
+    display: none;
+  }
+  .m-dostavka__buttons {
+    padding: 15px 0;
+  }
+  .m-dostavka__buttons-left {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .m-dostavka__buttons-right {
+    width: 100%;
+    margin-left: 0;
+  }
+  .m-steps__title {
+    position: static;
   }
   /**/
 }
