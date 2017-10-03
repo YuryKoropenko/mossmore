@@ -93,4 +93,18 @@ $(document).ready(function() {
 		$('.m-prods__l-slider').hide();
 		$('.cardslider4').show();
 	});
+
+	$('.m-lcab__history-item').on('click', function() {
+		$(this).parent().children('.m-lcab__toogle').css({
+			'opacity': '1',
+			'z-index': '2'
+		})
+	});
+
+	$('.m-lcab__close').on('click', function() {
+		$('.m-lcab__toogle').css({
+			'opacity': '0',
+			'z-index': '-999'
+		});
+	});
 });
