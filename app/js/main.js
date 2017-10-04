@@ -1,6 +1,10 @@
 $(document).ready(function() {
 	/*выпадающее меню*/
 	$('.l1').on('click', function() {
+		var dis = $(this).parent();
+		var act = $('.nav__item-active');
+		$('.nav__link').parent().removeClass('nav__item-active');
+		$(this).parent().toggleClass('nav__item-active');
 		$('.m2').addClass('hidden');
 		$('.m3').addClass('hidden');
 		$('.m4').addClass('hidden');
@@ -10,6 +14,8 @@ $(document).ready(function() {
 		return false;
 	});
 	$('.l2').on('click', function() {
+		$('.nav__link').parent().removeClass('nav__item-active');
+		$(this).parent().toggleClass('nav__item-active');
 		$('.m1').addClass('hidden');
 		$('.m3').addClass('hidden');
 		$('.m4').addClass('hidden');
@@ -19,6 +25,8 @@ $(document).ready(function() {
 		return false;
 	});
 	$('.l3').on('click', function() {
+		$('.nav__link').parent().removeClass('nav__item-active');
+		$(this).parent().addClass('nav__item-active');
 		$('.m1').addClass('hidden');
 		$('.m2').addClass('hidden');
 		$('.m4').addClass('hidden');
@@ -28,6 +36,8 @@ $(document).ready(function() {
 		return false;
 	});
 	$('.l4').on('click', function() {
+		$('.nav__link').parent().removeClass('nav__item-active');
+		$(this).parent().addClass('nav__item-active');
 		$('.m1').addClass('hidden');
 		$('.m2').addClass('hidden');
 		$('.m3').addClass('hidden');
@@ -37,6 +47,8 @@ $(document).ready(function() {
 		return false;
 	});
 	$('.l5').on('click', function() {
+		$('.nav__link').parent().removeClass('nav__item-active');
+		$(this).parent().addClass('nav__item-active');
 		$('.m1').addClass('hidden');
 		$('.m2').addClass('hidden');
 		$('.m3').addClass('hidden');
@@ -46,6 +58,8 @@ $(document).ready(function() {
 		return false;
 	});
 	$('.l6').on('click', function() {
+		$('.nav__link').parent().removeClass('nav__item-active');
+		$(this).parent().addClass('nav__item-active');
 		$('.m1').addClass('hidden');
 		$('.m2').addClass('hidden');
 		$('.m3').addClass('hidden');
@@ -106,5 +120,10 @@ $(document).ready(function() {
 			'opacity': '0',
 			'z-index': '-999'
 		});
+	});
+
+	$('.main__block-close').on('click', function() {
+		$(this).parent('.main__block').hide();
+		return false;
 	});
 });
