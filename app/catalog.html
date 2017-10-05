@@ -844,6 +844,11 @@
 													<i class="fa fa-heart-o" aria-hidden="true"></i>
 												</a>
 											</div>
+											<div class="m-prods__fprosm">
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
+												</a>
+											</div>
 										</div>
 										<a href="#card-popup" class="m-prods__text m-prods__text-1">
 											<h2 class="m-prods__title">
@@ -870,6 +875,11 @@
 											<div class="m-prods__icon">
 												<a href="#" class="m-prods__like">
 													<i class="fa fa-heart" aria-hidden="true"></i>
+												</a>
+											</div>
+											<div class="m-prods__fprosm">
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
 												</a>
 											</div>
 										</div>
@@ -900,6 +910,11 @@
 													<i class="fa fa-heart-o" aria-hidden="true"></i>
 												</a>
 											</div>
+											<div class="m-prods__fprosm">
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
+												</a>
+											</div>
 										</div>
 										<a href="#" class="m-prods__text">
 											<h2 class="m-prods__title">
@@ -926,6 +941,11 @@
 													<i class="fa fa-heart-o" aria-hidden="true"></i>
 												</a>
 											</div>
+											<div class="m-prods__fprosm">
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
+												</a>
+											</div>
 										</div>
 										<a href="#" class="m-prods__text">
 											<h2 class="m-prods__title">
@@ -951,32 +971,9 @@
 													<i class="fa fa-heart-o" aria-hidden="true"></i>
 												</a>
 											</div>
-										</div>
-										<a href="#" class="m-prods__text">
-											<h2 class="m-prods__title">
-												Мужские джинсы
-											</h2>
-											<span class="m-prods__type">
-												узкие
-											</span>
-											<span class="m-prods__price">
-												3000000
-											</span>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-4 col-lg-3 col-sm-6">
-									<div class="m-prods">
-										<div class="m-prods__news">
-											<span class="m-prods__news-text">
-												Новинка
-											</span>
-										</div>
-										<div class="m-prods__img">
-											<img src="img/prods/1.png" alt="photo" class="m-prods__photo">
-											<div class="m-prods__icon">
-												<a href="#" class="m-prods__like m-prods__like-off">
-													<i class="fa fa-heart-o" aria-hidden="true"></i>
+											<div class="m-prods__fprosm">
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
 												</a>
 											</div>
 										</div>
@@ -1008,8 +1005,41 @@
 												</a>
 											</div>
 											<div class="m-prods__fprosm">
-												<a href="#" class="">
-													Быстрый просмотр
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
+												</a>
+											</div>
+										</div>
+										<a href="#" class="m-prods__text">
+											<h2 class="m-prods__title">
+												Мужские джинсы
+											</h2>
+											<span class="m-prods__type">
+												узкие
+											</span>
+											<span class="m-prods__price">
+												3000000
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-3 col-sm-6">
+									<div class="m-prods">
+										<div class="m-prods__news">
+											<span class="m-prods__news-text">
+												Новинка
+											</span>
+										</div>
+										<div class="m-prods__img">
+											<img src="img/prods/1.png" alt="photo" class="m-prods__photo">
+											<div class="m-prods__icon">
+												<a href="#" class="m-prods__like m-prods__like-off">
+													<i class="fa fa-heart-o" aria-hidden="true"></i>
+												</a>
+											</div>
+											<div class="m-prods__fprosm">
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
 												</a>
 											</div>
 										</div>
@@ -1033,6 +1063,11 @@
 											<div class="m-prods__icon">
 												<a href="#" class="m-prods__like m-prods__like-off">
 													<i class="fa fa-heart-o" aria-hidden="true"></i>
+												</a>
+											</div>
+											<div class="m-prods__fprosm">
+												<a href="#card-popup">
+													<span>Быстрый просмотр</span>
 												</a>
 											</div>
 										</div>
@@ -1557,7 +1592,7 @@
 		$(document).ready(function() {
 			$('.r-description__coli-center').val('1');
 
-			$('.m-prods__text-1').fancybox();
+			$('.m-prods__fprosm a').fancybox();
 
 			$('.indexSlider').owlCarousel({
 				loop:true,

@@ -1142,6 +1142,10 @@ body {
   display: block;
 }
 
+.m-prods:hover .m-prods__fprosm {
+  display: block;
+}
+
 .m-prods .m-prods__popup {
   display: block;
 }
@@ -1355,7 +1359,7 @@ body {
 
 .m-prods__fprosm {
   position: absolute;
-  bottom: 34px;
+  bottom: 20%;
   left: 34px;
   right: 34px;
   display: none;
@@ -1374,8 +1378,18 @@ body {
   height: 62px;
   text-align: center;
   width: 100%;
-  line-height: 60px;
   text-decoration: none;
+  position: relative;
+  z-index: 10;
+}
+
+.m-prods__fprosm a span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  line-height: 30px;
 }
 
 .m-prods__fprosm a:hover, .m-prods__fprosm a:focus, .m-prods__fprosm a:active {
@@ -1435,11 +1449,15 @@ body {
   justify-content: space-between;
   -webkit-justify-content: space-between;
   font-size: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  width: auto;
 }
 
 .sliderNav__item {
-  width: 105px;
-  height: 117px;
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
   overflow: hidden;
   display: inline-block;
   cursor: pointer;
@@ -1491,6 +1509,7 @@ body {
 
 .r-description__comp {
   font-size: 0;
+  position: relative;
 }
 
 .r-description__comp-left {
@@ -1499,6 +1518,8 @@ body {
   line-height: 50px;
   letter-spacing: 0.025em;
   color: #000;
+  position: absolute;
+  left: 0;
 }
 
 .r-description__comp-right {
@@ -1508,7 +1529,8 @@ body {
   letter-spacing: 0.075em;
   color: #000;
   font-family: "CLXLight", sans-serif;
-  padding-left: 105px;
+  text-align: center;
+  width: 100%;
 }
 
 .r-description__color {
@@ -2605,13 +2627,14 @@ body {
 }
 
 .c-prods__l-slider {
-  width: 610px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 75px;
 }
 
 .c-prods__r-description {
-  width: 530px;
+  width: 100%;
+  padding: 0 12%;
   margin: 0 auto;
   margin-bottom: 75px;
 }
@@ -2714,9 +2737,8 @@ body {
 
 .m-lmodel__list {
   padding-top: 50px;
-  padding-bottom: 40px;
   border-bottom: 1px solid #ebebeb;
-  margin-bottom: 110px;
+  margin-bottom: 40px;
 }
 
 .m-lmodel__item {
@@ -2725,7 +2747,8 @@ body {
 }
 
 .m-lmodel__item .m-prods__photo {
-  width: auto !important;
+  width: 100%;
+  height: auto;
 }
 
 .m-lcomment__title {
