@@ -1,4 +1,16 @@
 $(document).ready(function() {
+
+	$('.m-register .ui-selectmenu-text').change(function() {
+		var znc = $(this).text();
+		var opt = $('#ui-id-2').text();
+		var roz = $('#ui-id-3').text();
+		if(znc == opt) {
+			alert(znc);
+		} else {
+			alert(znc);
+		}
+	});
+
 	/*выпадающее меню*/
 	$('.l1').on('click', function() {
 		var dis = $(this).parent();
