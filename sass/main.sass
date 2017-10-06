@@ -211,7 +211,7 @@ body
 		right: -11px
 		bottom: -11px
 		color: #fff
-		z-index: 1
+		z-index: 6
 		display: block
 		font-size: 16px
 		line-height: 25px
@@ -627,6 +627,18 @@ body
 	// display: -ms-flex
 	// display: -o-flex
 	// display: flex
+	&-menu
+		&::after
+			content: '<'
+			display: inline-block
+			-o-transform: rotate(-90deg)
+			-ms-transform: rotate(-90deg)
+			-moz-transform: rotate(-90deg)
+			-webkit-transform: rotate(-90deg)
+			transform: rotate(-90deg)
+			font-family: "CLXBook"
+			margin-right: -10px
+			line-height: 40px
 
 .m-style
 	display: -webkit-flex
@@ -744,31 +756,48 @@ body
 	position: relative
 	margin-bottom: 20px
 	cursor: pointer
+	background-color: #fff
+	.b-prods__varcolor-title
+		font-size: 11px
+	.b-prods__varcolor-item
+		margin-left: 20px
+	.b-prods__varcolor-list
+		margin-left: -20px
+	&::after
+		content: ''
+		display: block
+		border: 1px solid #000
+		border-bottom: none
+		width: auto
+		height: auto
+		position: absolute
+		left: -30px
+		right: -30px
+		top: -30px
+		bottom: 0
+		display: none
 	&:hover
+		border-bottom: none
+		width: auto
 		.m-prods__img::after
 			display: block
 		.m-prods__fprosm
 			display: block
+		&:after
+			content: ''
+			display: block
+		.b-prods__varcolor
+			display: block
+			left: -30px
+			right: -30px
+		.m-prods__buttons
+			display: none
 	.m-prods__popup
 		display: block
 	&__img
 		overflow: hidden
-		height: auto
 		position: relative
-		&::after
-			content: ''
-			position: absolute
-			left: 0
-			right: 0
-			top: 0
-			bottom: 0
-			background-color: #fff
-			width: 100%
-			height: 100%
-			display: block
-			opacity: 0.74
-			z-index: 2
-			display: none
+		display: block
 	&__photo
 		width: 100%
 		height: auto
@@ -909,22 +938,21 @@ body
 		position: relative
 	&__fprosm
 		position: absolute
-		bottom: 20%
-		left: 34px
-		right: 34px
+		bottom: 20px
+		left: 20px
+		right: 20px
 		display: none
 		z-index: 10
 		a
 			display: block
-			font-size: 16px
 			color: #000
-			display: inline-block
 			letter-spacing: 0.025em
 			font-family: "CLXBook", sans-serif
 			border: 1px solid #202021
 			padding: 0 20px
-			height: 62px
+			height: 34px
 			text-align: center
+			max-width: 130px
 			width: 100%
 			text-decoration: none
 			position: relative
@@ -936,6 +964,7 @@ body
 				left: 0
 				right: 0
 				line-height: 30px
+				font-size: 11px
 			&:hover, &:focus, &:active
 				text-decoration: none
 				color: #000
@@ -1259,17 +1288,20 @@ body
 			width: 50%
 			position: relative
 			height: 45px
-			span
-				font-size: 15px
-				letter-spacing: 0.025em
+		&-link
+			font-size: 15px
+			letter-spacing: 0.025em
+			color: #000
+			position: absolute
+			left: 10px
+			right: 10px
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			text-align: center
+			&:hover, &:focus, &:active
+				text-decoration: underline
 				color: #000
-				position: absolute
-				left: 10px
-				right: 10px
-				top: 50%
-				transform: translateY(-50%)
-				-webkit-transform: translateY(-50%)
-				text-align: center
 	&__subtabs
 		&-item
 			padding: 10px 0 0
@@ -1310,7 +1342,7 @@ body
 
 .b-prods
 	padding: 60px 45px 30px
-	border: 1px solid transparent
+	border: none !important
 	height: auto
 	position: relative
 	&:hover
@@ -1341,6 +1373,7 @@ body
 		bottom: 34px
 		left: 34px
 		display: none
+		z-index: 10
 		a
 			display: block
 			font-size: 22px
@@ -1478,7 +1511,9 @@ body
 		color: #000
 		letter-spacing: 0.025em
 	&__table
-		width: 100%
+		
+		&-wrapper
+			width: 100%
 	&__row
 		&:first-child
 			border-bottom: none !important
@@ -2241,6 +2276,8 @@ body
 			display: inline-block
 			max-width: 100%
 			height: auto
+	&__right
+		padding-right: 50px
 
 .m-optcorz
 	width: 100%
@@ -2495,7 +2532,7 @@ body
 		-webkit-transform: translateY(-50%)
 		display: block
 	&__title
-		font-family: "CLXSemiBold", sans-serif
+		font-family: "CLXBold", sans-serif
 		font-size: 16px
 		letter-spacing: 0.025em
 		position: absolute
@@ -2564,36 +2601,41 @@ body
 		letter-spacing: 0.025em
 
 .m-preimushestva
-	width: 640px
-	margin: 0 auto 100px
+	width: 100%
+	margin: 0 auto 30px
 	@extend .clearfix
 	border: 1px solid #000000
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-align-items: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
 	&__left
 		width: 50%
 		position: relative
 		overflow: hidden
-		height: 322px
-	&__img
-		min-width: 100%
 		height: auto
+	&__img
+		width: 100%
+		height: auto
+		display: block
 	&__right
 		position: relative
 		width: 50%
-		height: 322px
+		padding: 0 20px
 	&__wrapper
-		position: absolute
-		left: 20px
-		right: 20px
-		width: auto
-		top: 50%
-		transform: translateY(-50%)
-		-webkit-transform: translateY(-50%)
-		text-align: center
+		text-align: left
 	&__title
 		text-transform: uppercase
 		color: #000
 		font-family: "CLXBold", sans-serif
 		font-size: 18px
+		display: block
+		margin-bottom: 10px
 		&-big
 			font-size: 10px
 			font-size: 28px
@@ -3120,6 +3162,19 @@ body
 	&__right
 		float: left
 
+.mobsubnav
+	display: none
+	&__item
+		padding: 0 43px 0 30px
+		display: block
+		text-align: left
+	&__link
+		display: block
+		color: #000;
+		font-size: 12px;
+		font-family: "CLXBook", sans-serif;
+		display: inline-block
+
 .right-lcab
 	width: 440px
 	position: absolute
@@ -3164,3 +3219,249 @@ body
 		padding-left: 10px
 		padding-right: 10px
 		text-align: left
+
+.corzpopup
+	border: 1px solid #000
+	position: absolute
+	right: 0
+	top: 100%
+	background-color: rgba(#fff,.91)
+	width: 460px
+	opacity: 0
+	z-index: -999
+	&-active
+		opacity: 1 !important
+		z-index: 4 !important
+	&__wrapper
+		padding: 20px 30px
+	&__top
+		text-transform: uppercase
+		font-size: 18px
+		text-transform: uppercase
+		display: block
+		text-align: center
+		letter-spacing: 0.025em
+		margin-bottom: 4px
+	&__list
+		padding-right: 45px
+	&__item
+		position: relative
+		border-bottom: 1px solid #cccccc
+	&__left
+		width: 150px
+		text-align: left
+		strong
+			font-size: 12px
+			color: #000
+			font-family: "CLXSemiBold", sans-serif
+			letter-spacing: 0.025em
+			text-transform: uppercase
+			line-height: 16px
+		p
+			font-size: 14px
+			color: #919191
+			font-family: "CLXBook", sans-serif
+			line-height: 16px
+	&__right
+		position: absolute
+		right: 0
+		bottom: 16px
+		margin-left: 150px
+		left: 0
+	&__razmer
+		display: block
+		text-align: right
+		letter-spacing: 0.075em
+		line-height: 20px
+		font-size: 10px
+		font-family: "CLXLight", sans-serif
+		margin-bottom: 10px
+		span
+			font-size: 10px
+			width: 20px
+			height: 20px
+			display: inline-block
+			border: 1px solid #000
+			line-height: 18px
+			text-align: center
+			letter-spacing: 0.075em
+			margin-left: 3px
+			font-family: "CLXLight", sans-serif
+	&__info
+		font-size: 15px
+		color: #000
+		letter-spacing: 0.075em
+		font-family: "CLXMedium", sans-serif
+		&-item
+			display: inline-block
+			&:last-child
+				margin-left: 5px
+	&__bottom
+		width: 100%
+		text-align: right
+		font-size: 16px
+		line-height: 22px
+		letter-spacing: 0.075em
+		color: #000
+		font-family: "CLXMedium", sans-serif
+		margin-top: 20px
+		display: block
+		text-transform: uppercase
+	&__button
+		text-align: center
+		display: block
+		height: 44px
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+		background-color: #292929
+		font-size: 16px
+		letter-spacing: 0.025em
+		font-family: "CLXMedium", sans-serif
+		line-height: 42px
+		border: 1px solid #292929
+		margin-top: 20px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #292929
+			background-color: transparent
+	&__link
+		padding: 16px 0
+		display: block
+		&:hover
+			text-decoration: none
+			.corzpopup__left
+				strong
+					color: #cd0000
+	&__scroll
+		max-height: 291px
+	.jspContainer
+		padding: 0 !important
+	.jspPane
+		width: 100% !important
+	.jspVerticalBar
+		margin: 0 !important
+		right: 0 !important
+
+.yoursize
+	position: fixed
+	width: 430px
+	left: 0
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%)
+	margin: 0 auto
+	background-color: #fff
+	z-index: 20
+	border: 1px solid #000
+	display: none
+	&__wrapper
+		padding: 20px 30px
+		position: relative
+	&__top
+		font-size: 13px
+		text-transform: uppercase
+		color: #000
+		letter-spacing: 0.025em
+		font-family: "CLXBold", sans-serif
+		display: block
+		text-align: center
+		margin-bottom: 20px
+	&__table
+		width: 100%
+	&__subtitle
+		background-color: #000
+		td
+			font-size: 9px
+			padding: 0 10px
+			height: 30px
+			vertical-align: middle
+			line-height: auto
+			color: #fff
+			text-align: left
+	&__item
+		border-bottom: 1px solid #d0d0d0
+		td
+			height: 30px
+			font-size: 13px
+			color: #000
+			vertical-align: middle
+			padding: 0 10px
+			text-align: left
+
+.m-close
+	width: 22px
+	height: 22px
+	display: block
+	position: absolute
+	background-image: url(../img/icons/close.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	right: 17px
+	top: 14px
+
+.opisaniye
+	p
+		font-size: 13px
+		line-height: 18px
+		color: #000
+		letter-spacing: 0.025em
+
+.ok-podpiska
+	max-width: 818px
+	position: fixed
+	left: 0
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%)
+	margin: 0 auto
+	background-color: #fff
+	z-index: 20
+	border: 1px solid #000
+	overflow: hidden
+	display: none
+	&__wrapper
+		@extend .clearfix
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+	&__left
+		width: 40%
+		float: left
+		padding: 40px 20px
+		h2
+			font-size: 27px
+			color: #000
+			line-height: 27px
+			letter-spacing: 0.025em
+			font-family: "CLXSemiBold", sans-serif
+			text-transform: uppercase
+		p
+			font-size: 20px
+			color: #000
+			letter-spacing: 0.025em
+			line-height: 27px
+			display: block
+			padding: 20px 0
+		span
+			letter-spacing: 0.025em
+			line-height: 27px
+			display: block
+			color: #787878
+			font-size: 20px
+	&__right
+		width: 60%
+		float: right
+		position: relative
+		img
+			display: block
+			width: 100%

@@ -282,6 +282,13 @@
     display: block;
     max-width: 100%;
   }
+  .m-preimushestva__right {
+    padding: 0 10px;
+  }
+  .corzpopup {
+    right: 50%;
+    margin-right: -230px;
+  }
   /**/
 }
 
@@ -422,8 +429,18 @@
     width: 30%;
     margin: 0;
   }
-  .m-cont.m-cont__right {
-    display: none;
+  .main__m-cont {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .m-cont__img img {
+    display: block;
+  }
+  .m-cont__img {
+    margin-top: 16px;
+  }
+  .m-cont__right {
+    padding-right: 0;
   }
   .m-cont__map iframe {
     max-width: 100%;
@@ -474,8 +491,13 @@
     margin: 0 15px;
   }
   .m-content__table {
-    overflow-x: scroll;
     min-width: 991px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0px);
+  }
+  .m-content__table-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
   }
   .m-oformzak {
     width: 100%;
@@ -598,6 +620,21 @@
     line-height: 1.6;
   }
   /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 840px) {
+  .ok-podpiska {
+    width: auto;
+    left: 15px;
+    right: 15px;
+  }
+  .ok-podpiska__right {
+    display: none;
+  }
+  .ok-podpiska__left {
+    width: 100%;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -834,6 +871,17 @@
   .m-dostavka__item {
     margin: 0 0 15px 0;
     display: block;
+    width: 25%;
+    float: left;
+  }
+  .m-dostavka__dostavka {
+    margin-top: -50px;
+  }
+  .m-dostavka__title {
+    font-size: 12px;
+  }
+  .m-dostavka__img {
+    max-width: 100%;
   }
   .m-dostavka__dostavka::after {
     display: none;
@@ -876,7 +924,6 @@
   .m-preimushestva__right {
     width: 100%;
     float: none !important;
-    height: 290px;
   }
   .m-konkurs__img {
     height: 586px;
@@ -1002,6 +1049,24 @@
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 600px) {
+  .corzpopup {
+    width: 290px;
+    left: -162px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 500px) {
+  .m-preimushestva {
+    display: block;
+  }
+  .m-preimushestva__right {
+    padding: 15px;
+  }
+}
+
+/* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .r-description__color-top {
     width: 60px;
@@ -1066,6 +1131,35 @@
   }
   .m-konkurs__logo {
     width: 100%;
+  }
+  .corzpopup__item {
+    width: 100%;
+    position: static;
+  }
+  .corzpopup__left {
+    width: 100%;
+    text-align: center;
+  }
+  .corzpopup__right {
+    width: 100%;
+    margin-left: 0;
+    position: static;
+    text-align: center;
+  }
+  .corzpopup__razmer {
+    text-align: center;
+    margin-top: 7px;
+  }
+  .yoursize {
+    left: 15px;
+    right: 15px;
+    width: auto;
+  }
+  .yoursize__item td {
+    font-size: 12px;
+  }
+  .m-prods__wrapper {
+    padding: 10px;
   }
   /**/
 }
