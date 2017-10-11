@@ -3163,7 +3163,30 @@ body
 		float: left
 
 .mobsubnav
+	position: absolute
+	top: 100%
+	left: 0
+	width: auto
+	background-color: rgba(255,255,255,.91)
+	z-index: 99
 	display: none
+	&-little
+		width: 200px
+		.mobsubnav__list
+			width: 100%
+	&-big
+		width: 400px
+		.mobsubnav__list
+			width: 50%
+	@extend .clearfix
+	&__list
+		float: left
+		padding: 20px 0
+	&__title
+		padding: 0 43px 0 30px;
+		font-size: 12px
+		font-family: "CLXSemiBold", sans-serif
+		padding-bottom: 10px
 	&__item
 		padding: 0 43px 0 30px
 		display: block

@@ -619,6 +619,13 @@
   .nav__link::after {
     line-height: 1.6;
   }
+  .mobsubnav {
+    width: 100% !important;
+    position: static !important;
+  }
+  .mobsubnav__list {
+    padding: 0;
+  }
   /**/
 }
 

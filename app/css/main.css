@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .r-description__razm:after, .r-description__rost:after, .r-description__coli:after, .r-description__coli-block:after, .m-vhod__row:after, .m-register__row:after, .m-register__captcha:after, .m-offzakaz__block:after, .m-zakcomment__buttons:after, .m-optcorz__coly:after, .m-sumcorz:after, .m-oformzak__item:after, .m-preimushestva:after, .m-lcab__nav:after, .m-lcab__row:after, .m-brand__item:after, .m-brand__colection:after, .m-razmer:after, .ok-podpiska__wrapper:after {
+.clearfix:after, .r-description__razm:after, .r-description__rost:after, .r-description__coli:after, .r-description__coli-block:after, .m-vhod__row:after, .m-register__row:after, .m-register__captcha:after, .m-offzakaz__block:after, .m-zakcomment__buttons:after, .m-optcorz__coly:after, .m-sumcorz:after, .m-oformzak__item:after, .m-preimushestva:after, .m-lcab__nav:after, .m-lcab__row:after, .m-brand__item:after, .m-brand__colection:after, .m-razmer:after, .mobsubnav:after, .ok-podpiska__wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .r-description__razm:before, .r-description__rost:before, .r-description__coli:before, .r-description__coli-block:before, .m-vhod__row:before, .m-register__row:before, .m-register__captcha:before, .m-offzakaz__block:before, .m-zakcomment__buttons:before, .m-optcorz__coly:before, .m-sumcorz:before, .m-oformzak__item:before, .m-preimushestva:before, .m-lcab__nav:before, .m-lcab__row:before, .m-brand__item:before, .m-brand__colection:before, .m-razmer:before, .ok-podpiska__wrapper:before {
+.clearfix:before, .r-description__razm:before, .r-description__rost:before, .r-description__coli:before, .r-description__coli-block:before, .m-vhod__row:before, .m-register__row:before, .m-register__captcha:before, .m-offzakaz__block:before, .m-zakcomment__buttons:before, .m-optcorz__coly:before, .m-sumcorz:before, .m-oformzak__item:before, .m-preimushestva:before, .m-lcab__nav:before, .m-lcab__row:before, .m-brand__item:before, .m-brand__colection:before, .m-razmer:before, .mobsubnav:before, .ok-podpiska__wrapper:before {
   content: '';
   display: table;
 }
@@ -4307,7 +4307,41 @@ body {
 }
 
 .mobsubnav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.91);
+  z-index: 99;
   display: none;
+}
+
+.mobsubnav-little {
+  width: 200px;
+}
+
+.mobsubnav-little .mobsubnav__list {
+  width: 100%;
+}
+
+.mobsubnav-big {
+  width: 400px;
+}
+
+.mobsubnav-big .mobsubnav__list {
+  width: 50%;
+}
+
+.mobsubnav__list {
+  float: left;
+  padding: 20px 0;
+}
+
+.mobsubnav__title {
+  padding: 0 43px 0 30px;
+  font-size: 12px;
+  font-family: "CLXSemiBold", sans-serif;
+  padding-bottom: 10px;
 }
 
 .mobsubnav__item {

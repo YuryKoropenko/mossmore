@@ -5,6 +5,7 @@ $(document).ready(function() {
 	/*выпадающее меню*/
 	if ($(window).width() > 991) {
 		$('.l1').on('click', function() {
+			$('.mobsubnav').hide();
 			$('.l2').parent().removeClass('nav__item-active');
 			$('.l3').parent().removeClass('nav__item-active');
 			$('.l4').parent().removeClass('nav__item-active');
@@ -20,6 +21,7 @@ $(document).ready(function() {
 			return false;
 		});
 		$('.l2').on('click', function() {
+			$('.mobsubnav').hide();
 			$('.l1').parent().removeClass('nav__item-active');
 			$('.l3').parent().removeClass('nav__item-active');
 			$('.l4').parent().removeClass('nav__item-active');
@@ -35,6 +37,7 @@ $(document).ready(function() {
 			return false;
 		});
 		$('.l3').on('click', function() {
+			$('.mobsubnav-big').hide();
 			$('.l1').parent().removeClass('nav__item-active');
 			$('.l2').parent().removeClass('nav__item-active');
 			$('.l4').parent().removeClass('nav__item-active');
@@ -46,10 +49,11 @@ $(document).ready(function() {
 			$('.m4').addClass('hidden');
 			$('.m5').addClass('hidden');
 			$('.m6').addClass('hidden');
-			$('.m3').toggleClass('hidden');
+			$(this).parent().children('.mobsubnav').stop(false, true).toggle();
 			return false;
 		});
 		$('.l4').on('click', function() {
+			$('.mobsubnav-little').hide();
 			$('.l1').parent().removeClass('nav__item-active');
 			$('.l2').parent().removeClass('nav__item-active');
 			$('.l3').parent().removeClass('nav__item-active');
@@ -61,10 +65,11 @@ $(document).ready(function() {
 			$('.m3').addClass('hidden');
 			$('.m5').addClass('hidden');
 			$('.m6').addClass('hidden');
-			$('.m4').toggleClass('hidden');
+			$(this).parent().children('.mobsubnav').stop(false, true).toggle();
 			return false;
 		});
 		$('.l5').on('click', function() {
+			$('.mobsubnav').hide();
 			$('.l1').parent().removeClass('nav__item-active');
 			$('.l2').parent().removeClass('nav__item-active');
 			$('.l3').parent().removeClass('nav__item-active');
@@ -80,6 +85,7 @@ $(document).ready(function() {
 			return false;
 		});
 		$('.l6').on('click', function() {
+			$('.mobsubnav').hide();
 			$('.l1').parent().removeClass('nav__item-active');
 			$('.l2').parent().removeClass('nav__item-active');
 			$('.l3').parent().removeClass('nav__item-active');
