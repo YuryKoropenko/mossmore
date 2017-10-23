@@ -1012,6 +1012,15 @@ body {
   -webkit-justify-content: space-between;
 }
 
+.m-style__block {
+  overflow: hidden;
+}
+
+.m-style__block svg {
+  display: block;
+  float: #dfe0e1;
+}
+
 .m-style__item {
   position: relative;
 }

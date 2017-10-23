@@ -2,6 +2,13 @@ $(document).ready(function() {
 
 	$('.m-optcorz__coly-center input').val('1');
 
+	$('.m-style__item').hover(function() {
+		var stand = $(this).children('.m-style__img').attr('src');
+		$(this).children().children('.m-style__img').attr('src' ,'img/jeens/1-active.png');
+	}, function() {
+		$(this).children().children('.m-style__img').attr('src' ,'img/jeens/1.png')
+	});
+
 	/*выпадающее меню*/
 	if ($(window).width() > 991) {
 		$('.l1').on('click', function() {
