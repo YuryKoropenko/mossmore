@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .r-description__razm:after, .r-description__rost:after, .r-description__coli:after, .r-description__coli-block:after, .m-vhod__row:after, .m-register__row:after, .m-register__captcha:after, .m-offzakaz__block:after, .m-zakcomment__buttons:after, .m-optcorz__coly:after, .m-sumcorz:after, .m-oformzak__item:after, .m-preimushestva:after, .m-lcab__nav:after, .m-lcab__row:after, .m-brand__item:after, .m-brand__colection:after, .m-razmer:after, .mobsubnav:after, .ok-podpiska__wrapper:after {
+.clearfix:after, .r-description__razm:after, .r-description__rost:after, .r-description__coli:after, .r-description__coli-block:after, .b-prods__varcolor-list:after, .m-vhod__row:after, .m-register__row:after, .m-register__captcha:after, .m-offzakaz__block:after, .m-zakcomment__buttons:after, .m-optcorz__coly:after, .m-sumcorz:after, .m-oformzak__item:after, .m-preimushestva:after, .m-lcab__nav:after, .m-lcab__row:after, .m-brand__item:after, .m-brand__colection:after, .m-razmer:after, .mobsubnav:after, .ok-podpiska__wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .r-description__razm:before, .r-description__rost:before, .r-description__coli:before, .r-description__coli-block:before, .m-vhod__row:before, .m-register__row:before, .m-register__captcha:before, .m-offzakaz__block:before, .m-zakcomment__buttons:before, .m-optcorz__coly:before, .m-sumcorz:before, .m-oformzak__item:before, .m-preimushestva:before, .m-lcab__nav:before, .m-lcab__row:before, .m-brand__item:before, .m-brand__colection:before, .m-razmer:before, .mobsubnav:before, .ok-podpiska__wrapper:before {
+.clearfix:before, .r-description__razm:before, .r-description__rost:before, .r-description__coli:before, .r-description__coli-block:before, .b-prods__varcolor-list:before, .m-vhod__row:before, .m-register__row:before, .m-register__captcha:before, .m-offzakaz__block:before, .m-zakcomment__buttons:before, .m-optcorz__coly:before, .m-sumcorz:before, .m-oformzak__item:before, .m-preimushestva:before, .m-lcab__nav:before, .m-lcab__row:before, .m-brand__item:before, .m-brand__colection:before, .m-razmer:before, .mobsubnav:before, .ok-podpiska__wrapper:before {
   content: '';
   display: table;
 }
@@ -1220,6 +1220,7 @@ body {
 .m-prods__photo {
   width: 100%;
   height: auto;
+  max-height: 100%;
   display: block;
 }
 
@@ -1579,19 +1580,16 @@ body {
 }
 
 .r-description__color {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
+  display: block;
   width: 100%;
+  text-align: center;
 }
 
 .r-description__color-item {
   width: 95px;
   cursor: pointer;
+  text-align: center;
+  display: inline-block;
 }
 
 .r-description__color-item-active .r-description__color-top {
@@ -2023,20 +2021,15 @@ body {
 }
 
 .b-prods__varcolor-list {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
+  width: 100%;
   margin-left: -40px;
 }
 
 .b-prods__varcolor-item {
   display: block;
-  width: 100%;
+  width: 33.33333%;
   margin-left: 40px;
+  float: left;
 }
 
 .b-prods__varcolor-img {

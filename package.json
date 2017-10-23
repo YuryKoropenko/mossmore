@@ -5,11 +5,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "YuryKoropenko",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuryKoropenko/mossmore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YuryKoropenko/mossmore/issues"
+  },
+  "homepage": "https://github.com/YuryKoropenko/mossmore#readme",
   "description": ""
 }
