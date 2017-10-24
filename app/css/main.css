@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .r-description__razm:after, .r-description__rost:after, .r-description__coli:after, .r-description__coli-block:after, .b-prods__varcolor-list:after, .m-vhod__row:after, .m-register__row:after, .m-register__captcha:after, .m-offzakaz__block:after, .m-zakcomment__buttons:after, .m-optcorz__coly:after, .m-sumcorz:after, .m-oformzak__item:after, .m-preimushestva:after, .m-lcab__nav:after, .m-lcab__row:after, .m-brand__item:after, .m-brand__colection:after, .m-razmer:after, .mobsubnav:after, .ok-podpiska__wrapper:after {
+.clearfix:after, .m-prods .b-prods__varcolor-list:after, .r-description__razm:after, .r-description__rost:after, .r-description__coli:after, .r-description__coli-block:after, .b-prods__varcolor-list:after, .m-vhod__row:after, .m-register__row:after, .m-register__captcha:after, .m-offzakaz__block:after, .m-zakcomment__buttons:after, .m-optcorz__coly:after, .m-sumcorz:after, .m-oformzak__item:after, .m-preimushestva:after, .m-lcab__nav:after, .m-lcab__row:after, .m-brand__item:after, .m-brand__colection:after, .m-razmer:after, .mobsubnav:after, .ok-podpiska__wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .r-description__razm:before, .r-description__rost:before, .r-description__coli:before, .r-description__coli-block:before, .b-prods__varcolor-list:before, .m-vhod__row:before, .m-register__row:before, .m-register__captcha:before, .m-offzakaz__block:before, .m-zakcomment__buttons:before, .m-optcorz__coly:before, .m-sumcorz:before, .m-oformzak__item:before, .m-preimushestva:before, .m-lcab__nav:before, .m-lcab__row:before, .m-brand__item:before, .m-brand__colection:before, .m-razmer:before, .mobsubnav:before, .ok-podpiska__wrapper:before {
+.clearfix:before, .m-prods .b-prods__varcolor-list:before, .r-description__razm:before, .r-description__rost:before, .r-description__coli:before, .r-description__coli-block:before, .b-prods__varcolor-list:before, .m-vhod__row:before, .m-register__row:before, .m-register__captcha:before, .m-offzakaz__block:before, .m-zakcomment__buttons:before, .m-optcorz__coly:before, .m-sumcorz:before, .m-oformzak__item:before, .m-preimushestva:before, .m-lcab__nav:before, .m-lcab__row:before, .m-brand__item:before, .m-brand__colection:before, .m-razmer:before, .mobsubnav:before, .ok-podpiska__wrapper:before {
   content: '';
   display: table;
 }
@@ -1171,11 +1171,15 @@ body {
 }
 
 .m-prods .b-prods__varcolor-item {
-  margin-left: 20px;
+  float: left;
+  width: 33.33333%;
+  box-sizing: border-box;
+  padding: 0 15px 30px;
+  margin-left: 0;
 }
 
 .m-prods .b-prods__varcolor-list {
-  margin-left: -20px;
+  margin-left: 0;
 }
 
 .m-prods::after {
