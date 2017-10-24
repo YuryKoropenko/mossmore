@@ -670,6 +670,11 @@ body
 	&__img
 		display: block
 		width: 100%
+		opacity: 0.5
+		@include transition(all 0.5s ease-in-out)
+		&:hover
+			opacity: 1
+			@include transition(all 0.5s ease-in-out)
 	&__bg
 		position: absolute
 		left: 0

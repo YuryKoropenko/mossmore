@@ -1043,6 +1043,17 @@ body {
 .m-style__img {
   display: block;
   width: 100%;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.m-style__img:hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .m-style__bg {
