@@ -1525,11 +1525,12 @@ body {
   overflow: hidden;
   display: inline-block;
   cursor: pointer;
+  max-width: 100%;
 }
 
 .sliderNav__img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 190px;
   display: block;
 }
 
