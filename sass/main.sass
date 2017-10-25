@@ -986,6 +986,9 @@ body
 .l-slider
 	&__img
 		display: block
+	&__item
+		a
+			display: block
 	.owl-nav
 		position: absolute
 		left: 0
@@ -1038,7 +1041,7 @@ body
 		max-width: 100%
 	&__img
 		width: auto
-		height: 190px
+		height: 110px
 		display: block
 
 .r-description
@@ -3522,3 +3525,36 @@ body
 			color: #fff
 			text-decoration: none
 			background-color: #444
+
+.popupPhoto
+	width: 990px
+	padding: 0
+	.owl-prev
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		left: 26px
+		background-image: url(../img/icons/prev-arrow.png)
+		width: 24px
+		height: 41px
+		display: block
+		text-indent: -9999px
+		z-index: 2
+	.owl-next
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		right: 26px
+		background-image: url(../img/icons/next-arrow.png)
+		width: 24px
+		height: 41px
+		display: block
+		text-indent: -9999px
+		z-index: 2
+	&__wrapper
+	&__slider
+	&__item
+	&__img
+		display: block !important

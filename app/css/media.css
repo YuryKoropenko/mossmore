@@ -623,6 +623,14 @@
   .mobsubnav__list {
     padding: 0;
   }
+  .popupPhoto {
+    width: 98%;
+    height: auto;
+  }
+  .sliderNav__img {
+    width: 100%;
+    height: auto;
+  }
   /**/
 }
 
