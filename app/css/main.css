@@ -1164,6 +1164,7 @@ body {
   margin-bottom: 20px;
   cursor: pointer;
   background-color: #fff;
+  height: auto;
 }
 
 .m-prods .b-prods__varcolor-title {
