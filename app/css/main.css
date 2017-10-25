@@ -4796,6 +4796,7 @@ body {
 .popupPhoto {
   width: 990px;
   padding: 0;
+  display: none;
 }
 
 .popupPhoto .owl-prev {
