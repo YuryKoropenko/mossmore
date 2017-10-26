@@ -62,9 +62,9 @@ body
 			padding-top: 0
 	&__block
 		position: relative
+		padding-bottom: 145px
 		&-bg
 			overflow: hidden
-			min-height: 832px
 			&::after
 				content: ''
 				position: absolute
@@ -641,20 +641,15 @@ body
 			line-height: 40px
 
 .m-style
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: space-between
-	-webkit-justify-content: space-between
+	font-size: 0
+	text-align: center
 	&__block
 		overflow: hidden
-		svg
-			display: block
-			float: #dfe0e1
 	&__item
 		position: relative
+		width: 14%
+		margin: 0 1%
+		display: inline-block
 	&__link
 		&:hover, &:focus, &:active
 			text-decoration: none
@@ -990,10 +985,13 @@ body
 
 .l-slider
 	&__img
-		display: block
+		display: inline-block
+		height: 450px
 	&__item
+		text-align: center
+		overflow: hidden
 		a
-			display: block
+			display: inline-block
 	.owl-nav
 		position: absolute
 		left: 0
@@ -1038,16 +1036,17 @@ body
 	width: auto
 	&__item
 		width: 100%
-		height: auto
+		height: 110px
 		padding: 0 10px
 		overflow: hidden
 		display: inline-block
 		cursor: pointer
 		max-width: 100%
+		text-align: center
 	&__img
 		width: auto
-		height: 110px
-		display: block
+		height: 100%
+		display: inline-block
 
 .r-description
 	&__top
@@ -3564,3 +3563,6 @@ body
 	&__item
 	&__img
 		display: block !important
+
+.owl-carousel .owl-item img
+	width: auto !important

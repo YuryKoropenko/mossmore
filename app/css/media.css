@@ -286,6 +286,9 @@
     right: 50%;
     margin-right: -230px;
   }
+  .main__block {
+    padding-bottom: 0;
+  }
   /**/
 }
 
@@ -1056,6 +1059,9 @@
   .m-raz .m-loytable {
     min-width: 550px;
     overflow-x: auto;
+  }
+  .l-slider__img {
+    height: 335px;
   }
   /**/
 }
