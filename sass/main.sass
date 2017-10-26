@@ -793,8 +793,6 @@ body
 	&:hover
 		border-bottom: none
 		width: auto
-		.m-prods__img::after
-			display: block
 		.m-prods__fprosm
 			display: block
 		&:after
@@ -808,6 +806,10 @@ body
 			display: none
 	.m-prods__popup
 		display: block
+	&__link
+		display: block
+		position: relative
+		z-index: 1
 	&__img
 		overflow: hidden
 		position: relative

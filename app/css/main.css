@@ -1203,10 +1203,6 @@ body {
   width: auto;
 }
 
-.m-prods:hover .m-prods__img::after {
-  display: block;
-}
-
 .m-prods:hover .m-prods__fprosm {
   display: block;
 }
@@ -1228,6 +1224,12 @@ body {
 
 .m-prods .m-prods__popup {
   display: block;
+}
+
+.m-prods__link {
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .m-prods__img {
