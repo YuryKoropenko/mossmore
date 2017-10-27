@@ -4839,7 +4839,3 @@ body {
 .popupPhoto__img {
   display: block !important;
 }
-
-.owl-carousel .owl-item img {
-  width: auto !important;
-}
