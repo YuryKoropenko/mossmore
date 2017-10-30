@@ -382,15 +382,16 @@ body
 		color: #fff
 
 .groop
-	max-height: 904px
-	max-width: 760px
+	width: 100%
+	height: 100%
 	overflow: hidden
 	position: relative
 	display: block
 	margin: 0 auto
 	&__img
-		min-height: 100%
-		min-width: 100%
+		width: 100%
+		height: auto
+		display: block
 	&__text
 		position: absolute
 		top: 50%
@@ -985,8 +986,9 @@ body
 
 .l-slider
 	&__img
-		display: inline-block
+		display: inline-block !important
 		height: 450px
+		width: auto !important
 	&__item
 		text-align: center
 		overflow: hidden
@@ -1023,20 +1025,14 @@ body
 		padding-top: 30px
 
 .sliderNav
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: space-between
-	-webkit-justify-content: space-between
 	font-size: 0
 	margin-left: -10px
 	margin-right: -10px
 	width: auto
+	text-align: center
 	&__item
 		height: 110px
-		padding: 0 10px
+		margin: 0 10px 20px 10px
 		width: auto
 		overflow: hidden
 		display: inline-block
@@ -1144,15 +1140,17 @@ body
 		@extend .clearfix
 		padding-top: 20px
 		&-title
-			width: 25%
+			width: 27%
 			float: left
 			font-size: 14px
 			line-height: 120%
 			color: #000
 			letter-spacing: 0.025em
 		&-list
-			width: 75%
-			float: right
+			width: 100%
+			margin-left: -27%
+			float: left
+			text-align: center
 		&-item
 			display: inline-block
 			vertical-align: middle
@@ -1191,6 +1189,7 @@ body
 			width: 100%
 			float: left
 			padding-top: 5px
+			padding-left: 0
 			a
 				display: inline-block
 				font-size: 14px
@@ -1200,17 +1199,19 @@ body
 		@extend .clearfix
 		padding-top: 20px
 		&-title
-			width: 25%
+			width: 27%
 			float: left
 			font-size: 14px
 			line-height: 34px
 			color: #000
 			letter-spacing: 0.025em
 		&-list
-			width: 75%
-			float: right
-			padding-left: 30px
+			width: 100%
+			float: left
+			padding-left: 0
+			text-align: center
 			font-size: 0
+			margin-left: -27%
 		&-item
 			display: inline-block
 			vertical-align: middle
@@ -1238,17 +1239,22 @@ body
 		@extend .clearfix
 		padding-top: 20px
 		&-title
-			width: 35%
+			width: 27%
 			float: left
 			font-size: 14px
 			line-height: 34px
 			color: #000
 			letter-spacing: 0.025em
 		&-block
-			width: 65%
-			float: right
-			@extend .clearfix
-			position: relative
+			width: 100%
+			text-align: center
+			width: 100%
+			margin-left: -27%
+			float: left
+			&-wp
+				display: inline-block
+				@extend .clearfix
+				position: relative
 		&-left
 			width: 35px
 			text-align: right
@@ -1946,17 +1952,6 @@ body
 		margin-left: -86px
 		margin-right: -86px
 		width: auto
-	&__razm
-		&-list
-			float: left
-			margin-left: -25%
-			padding-left: 0
-			text-align: center
-			width: 100%
-			.r-description__coli-block
-				float: none
-				width: auto
-				display: inline-block
 	&__price
 		font-size: 26px
 		margin-top: 50px
@@ -3395,7 +3390,7 @@ body
 	-webkit-transform: translateY(-50%)
 	margin: 0 auto
 	background-color: #fff
-	z-index: 20
+	z-index: 1000
 	border: 1px solid #000
 	display: none
 	&__wrapper
@@ -3567,3 +3562,22 @@ body
 	&__item
 	&__img
 		display: block !important
+
+.bx-filter
+	min-width: 100%
+.m-lmodel__list
+	.m-prods
+		&:hover
+			&:after
+				content: ''
+				display: none
+			.b-prods__varcolor
+				display: none
+				left: 0
+				right: 0
+			.m-prods__buttons
+				display: none
+
+.bx-filter .bx-filter-button-box .bx-filter-block, .bx-filter .bx-filter-parameters-box.bx-active .bx-filter-block
+	margin-left: 15px
+	margin-right: 15px

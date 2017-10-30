@@ -790,14 +790,14 @@
 		<div class="main__line">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="main__infoFilter">
 							<div class="infoFilter">
 								Найденно: 55
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="main__m-sort">
 							<div class="m-sort">
 								<span class="m-sort__text">Сортировать:</span>
@@ -1606,9 +1606,11 @@
 										Кол-во упаковок
 									</span>
 									<div class="r-description__coli-block">
-										<div class="r-description__coli-left">-</div>
-										<input type="text" class="r-description__coli-center">
-										<div class="r-description__coli-right">+</div>
+										<div class="r-description__coli-block-wp">
+											<div class="r-description__coli-left">-</div>
+											<input type="text" class="r-description__coli-center">
+											<div class="r-description__coli-right">+</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1656,9 +1658,6 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.r-description__coli-center').val('1');
-
-			$('.b-prods__fprosm a').fancybox();
-
 			$('.indexSlider').owlCarousel({
 				loop:true,
 				margin:0,

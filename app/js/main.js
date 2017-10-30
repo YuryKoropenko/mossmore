@@ -215,4 +215,13 @@ $(document).ready(function() {
 			});
 		return false;
 	})
+
+	$('.m-register__input-phone').mask("(999) 999-9999");
+	$('.m-register__input-email').
+
+	if ($(window).width() > 768) {
+		$('.m-prods__fprosm a').fancybox();
+		
+		$('.b-prods__fprosm a').fancybox();
+	}
 });

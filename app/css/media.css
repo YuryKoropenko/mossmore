@@ -38,6 +38,9 @@
   .groop__description {
     font-size: 28px;
   }
+  .baner {
+    overflow: hidden;
+  }
   .baner__title {
     font-size: 77px;
   }
@@ -225,6 +228,11 @@
   .c-description__color {
     margin-left: 0;
     margin-right: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
   }
   .c-description__color .r-description__color-top {
     width: 100%;
@@ -288,6 +296,9 @@
   }
   .main__block {
     padding-bottom: 0;
+  }
+  .r-description__color-item {
+    width: 95px;
   }
   /**/
 }
@@ -630,9 +641,14 @@
     width: 98%;
     height: auto;
   }
+  .sliderNav__item {
+    text-align: center;
+    overflow: hidden;
+  }
   .sliderNav__img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
+    display: inline-block;
   }
   /**/
 }
@@ -1063,6 +1079,50 @@
   .l-slider__img {
     height: 335px;
   }
+  .m-prods:hover .b-prods__varcolor {
+    right: -15px;
+    left: -15px;
+  }
+  .m-prods::after {
+    left: -15px;
+    right: -15px;
+  }
+  body .m-prods__fprosm {
+    display: none !important;
+  }
+  body .b-prods__fprosm {
+    display: none !important;
+  }
+  .m-prods:hover {
+    width: 290px;
+  }
+  .m-prods:hover .m-prods__fprosm {
+    display: none;
+  }
+  .m-prods:hover:after {
+    content: '';
+    display: none;
+  }
+  .m-prods:hover .b-prods__varcolor {
+    display: none;
+    left: 0;
+    right: 0;
+  }
+  .m-prods:hover .m-prods__buttons {
+    display: none;
+  }
+  .c-description__price {
+    margin-top: 15px;
+  }
+  .r-description__coli {
+    padding-top: 10px;
+  }
+  .r-description__rost {
+    padding-top: 10px;
+  }
+  .r-description__razm {
+    padding-top: 10px;
+  }
   /**/
 }
 
@@ -1070,7 +1130,7 @@
 @media only screen and (max-width: 600px) {
   .corzpopup {
     width: 290px;
-    left: -162px;
+    left: -196px;
   }
 }
 
@@ -1102,6 +1162,7 @@
   }
   .r-description__razm-description {
     width: 100%;
+    padding-left: 0;
   }
   .r-description__rost-title {
     width: 100%;
@@ -1117,9 +1178,10 @@
     text-align: center;
   }
   .r-description__coli-block {
-    display: inline-block;
-    width: auto;
-    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
   }
   .r-description__coli {
     text-align: center;
@@ -1178,6 +1240,12 @@
   }
   .m-prods__wrapper {
     padding: 10px;
+  }
+  .infoFilter {
+    font-size: 18px;
+  }
+  .m-sort__text {
+    font-size: 18px;
   }
   /**/
 }
