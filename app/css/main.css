@@ -4845,6 +4845,15 @@ body {
   display: block !important;
 }
 
+.m-lmodel__list .owl-stage {
+  margin: 0 auto;
+}
+
+.m-prods__l-slider {
+  padding-right: 12%;
+  padding-left: 12%;
+}
+
 .bx-filter {
   min-width: 100%;
 }
