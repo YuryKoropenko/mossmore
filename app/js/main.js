@@ -205,6 +205,7 @@ $(document).ready(function() {
 
 	$('.m-close').on('click', function() {
 		$(this).parent().parent().hide();
+		return false;
 	});
 	$('.r-description__tabs-item > a').on('click', function() {
 		$(this).parent().children('.yoursize').show();

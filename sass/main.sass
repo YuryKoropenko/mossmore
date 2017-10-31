@@ -770,7 +770,7 @@ body
 		float: left
 		width: 33.33333%
 		box-sizing: border-box
-		padding: 0 15px 30px
+		padding: 0 10px 20px
 		margin-left: 0
 	.b-prods__varcolor-list
 		@extend .clearfix
@@ -1448,9 +1448,9 @@ body
 			text-align: center
 			overflow: hidden
 		&-img
-			height: 50px
+			height: 80px
 			display: inline-block
-			max-width: 100%
+			width: auto
 			width: auto
 		&-title
 			width: 100%
@@ -3586,9 +3586,24 @@ body
 			.m-prods__buttons
 				display: none
 
+.b-prods__varcolor-img-wrapper
+	overflow: hidden
+.m-prods .b-prods__varcolor-list
+	margin-left: -10px
+	margin-right: -10px
+	width: auto
+.c-description__razm-list
+	text-align: center
+.bx-filter
+	min-width: auto !important
+	width: 100%
+
 .bx-filter .bx-filter-button-box .bx-filter-block, .bx-filter .bx-filter-parameters-box.bx-active .bx-filter-block
 	margin-left: 15px
 	margin-right: 15px
 
 .m-content__table
 	width: 100%
+
+body #modef
+	display: none !important
