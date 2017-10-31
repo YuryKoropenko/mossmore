@@ -9,8 +9,24 @@ $(document).ready(function() {
 		$(this).children().children('.m-style__img').attr('src' ,'img/jeens/1.png')
 	});
 
-	$('.bx-filter-parameters-box-title').on('click', function() {
+	$('.bx-filter-parameters-box-title .bx-filter-title').on('click', function() {
 		$('.smartfilter').slideToogle();
+	});
+
+	$('.b-prods__varcolor-item-1').on('click', function() {
+		$('.b-prods__varcolor-block-2').hide();
+		$('.b-prods__varcolor-block-3').hide();
+		$('.b-prods__varcolor-block-1').show();
+	});
+	$('.b-prods__varcolor-item-2').on('click', function() {
+		$('.b-prods__varcolor-block-1').hide();
+		$('.b-prods__varcolor-block-3').hide();
+		$('.b-prods__varcolor-block-2').show();
+	});
+	$('.b-prods__varcolor-item-3').on('click', function() {
+		$('.b-prods__varcolor-block-1').hide();
+		$('.b-prods__varcolor-block-2').hide();
+		$('.b-prods__varcolor-block-3').show();
 	});
 
 	/*выпадающее меню*/
