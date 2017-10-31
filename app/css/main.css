@@ -1523,7 +1523,6 @@ body {
 }
 
 .sliderNav__item {
-  height: 110px;
   margin: 0 10px 20px 10px;
   width: auto;
   overflow: hidden;
@@ -1533,9 +1532,9 @@ body {
 }
 
 .sliderNav__img {
-  width: auto;
-  height: 100%;
-  display: inline-block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .r-description__top {
@@ -2057,23 +2056,23 @@ body {
 
 .b-prods__varcolor-list {
   width: 100%;
-  margin-left: -40px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .b-prods__varcolor-item {
   display: block;
   width: 33.33333%;
-  margin-left: 40px;
+  padding: 0 10px 20px 10px;
   float: left;
   text-align: center;
   overflow: hidden;
 }
 
 .b-prods__varcolor-img {
-  height: 80px;
-  display: inline-block;
-  width: auto;
-  width: auto;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .b-prods__varcolor-title {
