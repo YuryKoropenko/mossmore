@@ -10,8 +10,8 @@ $(document).ready(function() {
 	});
 
 	$('.bx-filter-parameters-box-title .bx-filter-title').on('click', function() {
-		$('.smartfilter').slideToogle();
-		$(this).toogleClass('bx-filter-title-active');
+		$('.smartfilter').slideToggle();
+		$(this).toggleClass('bx-filter-title-active');
 	});
 
 	$('.b-prods__varcolor-item-1').on('click', function() {
