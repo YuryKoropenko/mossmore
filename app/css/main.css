@@ -1461,9 +1461,9 @@ body {
 }
 
 .l-slider__img {
-  display: inline-block !important;
-  height: 450px;
-  width: auto !important;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .l-slider__item {
@@ -4606,6 +4606,7 @@ body {
 
 .corzpopup__scroll {
   max-height: 291px;
+  overflow-y: scroll;
 }
 
 .corzpopup .jspContainer {
@@ -4888,6 +4889,12 @@ body {
 
 .m-content__table {
   width: 100%;
+}
+
+.bx-filter-parameters-box-container .checkbox {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: auto;
 }
 
 body #modef {

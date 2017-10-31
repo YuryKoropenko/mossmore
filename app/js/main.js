@@ -9,6 +9,10 @@ $(document).ready(function() {
 		$(this).children().children('.m-style__img').attr('src' ,'img/jeens/1.png')
 	});
 
+	$('.bx-filter-parameters-box-title').on('click', function() {
+		$('.smartfilter').slideToogle();
+	});
+
 	/*выпадающее меню*/
 	if ($(window).width() > 991) {
 		$('.l1').on('click', function() {
