@@ -1238,6 +1238,8 @@ body
 	&__coli
 		@extend .clearfix
 		padding-top: 20px
+		&-list
+			
 		&-title
 			width: 27%
 			float: left
@@ -2592,9 +2594,12 @@ body
 		padding-bottom: 10px
 	&__description
 
+
 .m-loytable
 	width: 686px
-	margin: 40px auto 60px
+	margin: 0 auto
+	&__wrapper
+		margin: 40px auto 60px
 	&__row
 		border-bottom: 1px solid #d0d0d0
 		&-top
@@ -3207,10 +3212,13 @@ body
 		text-align: left
 	&__link
 		display: block
-		color: #000;
-		font-size: 12px;
-		font-family: "CLXBook", sans-serif;
+		color: #000
+		font-size: 12px
+		font-family: "CLXBook", sans-serif
 		display: inline-block
+		&:hover, &:focus, &:active
+			text-decoration: underline
+			color: #000
 
 .right-lcab
 	width: 440px
@@ -3581,3 +3589,6 @@ body
 .bx-filter .bx-filter-button-box .bx-filter-block, .bx-filter .bx-filter-parameters-box.bx-active .bx-filter-block
 	margin-left: 15px
 	margin-right: 15px
+
+.m-content__table
+	width: 100%

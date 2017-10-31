@@ -947,6 +947,10 @@
     margin-top: 10px;
     text-align: center;
   }
+  .m-loytable__wrapper {
+    width: 100%;
+    overflow-x: scroll;
+  }
   .m-loytable {
     width: 686px;
     overflow-x: scroll;
@@ -1246,6 +1250,10 @@
   }
   .m-sort__text {
     font-size: 18px;
+  }
+  .yoursize__wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
   }
   /**/
 }
