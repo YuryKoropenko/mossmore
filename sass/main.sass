@@ -2416,11 +2416,16 @@ body
 		letter-spacing: 0.025em
 		width: 260px
 		height: 46px
+		line-height: 44px
 		border: 1px solid #000
 		color: #000
 		background-color: transparent
 		text-align: center
 		margin-left: 15px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			background-color: #000
+			color: #fff
 
 .m-sumcorz
 	@extend .clearfix
@@ -2433,6 +2438,9 @@ body
 		color: #000
 		text-align: center
 		letter-spacing: 0.025em
+		&:hover, &:focus, &:active
+			background-color: #000
+			color: #fff
 	&__sum
 	&__item
 		margin-bottom: 10px
@@ -2453,11 +2461,17 @@ body
 	&__button
 		width: 258px
 		height: 46px
+		line-height: 44px
+		display: block
 		border: 1px solid #000
 		background-color: #000
 		color: #fff
 		text-align: center
 		letter-spacing: 0.025em
+		&:hover, &:focus, &:active
+			text-decoration: none
+			background-color: transparent
+			color: #000
 	&__sum
 		width: 192px
 		float: left

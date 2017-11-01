@@ -3335,11 +3335,18 @@ body {
   letter-spacing: 0.025em;
   width: 260px;
   height: 46px;
+  line-height: 44px;
   border: 1px solid #000;
   color: #000;
   background-color: transparent;
   text-align: center;
   margin-left: 15px;
+}
+
+.m-promocorz__button:hover, .m-promocorz__button:focus, .m-promocorz__button:active {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
 }
 
 .m-sumcorz {
@@ -3354,6 +3361,11 @@ body {
   color: #000;
   text-align: center;
   letter-spacing: 0.025em;
+}
+
+.m-sumcorz__catalog:hover, .m-sumcorz__catalog:focus, .m-sumcorz__catalog:active {
+  background-color: #000;
+  color: #fff;
 }
 
 .m-sumcorz__item {
@@ -3382,11 +3394,19 @@ body {
 .m-sumcorz__button {
   width: 258px;
   height: 46px;
+  line-height: 44px;
+  display: block;
   border: 1px solid #000;
   background-color: #000;
   color: #fff;
   text-align: center;
   letter-spacing: 0.025em;
+}
+
+.m-sumcorz__button:hover, .m-sumcorz__button:focus, .m-sumcorz__button:active {
+  text-decoration: none;
+  background-color: transparent;
+  color: #000;
 }
 
 .m-sumcorz__sum {
