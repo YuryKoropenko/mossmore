@@ -3689,6 +3689,35 @@ body #modef
 	width: auto
 
 .nav__search-link
-	
+
 .h-search
 	display: none
+
+.h-personal
+	padding-left: 40px
+	position: relative
+	margin-left: 25px
+	&__link
+		background-image: url(../img/icons/porfil-active.png) !important
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	&__right
+		text-align: left
+	&__name
+		font-size: 16px
+		display: block
+		color: #000
+		letter-spacing: 0.025em
+	&__exit
+		font-size: 16px
+		display: inline-block
+		text-decoration: underline
+		letter-spacing: 0.025em
+		color: rgba(#000,.5)
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: rgba(#000,.5)
+

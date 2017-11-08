@@ -4998,3 +4998,42 @@ body #modef {
 .h-search {
   display: none;
 }
+
+.h-personal {
+  padding-left: 40px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.h-personal__link {
+  background-image: url(../img/icons/porfil-active.png) !important;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.h-personal__right {
+  text-align: left;
+}
+
+.h-personal__name {
+  font-size: 16px;
+  display: block;
+  color: #000;
+  letter-spacing: 0.025em;
+}
+
+.h-personal__exit {
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: underline;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.h-personal__exit:hover, .h-personal__exit:focus, .h-personal__exit:active {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
