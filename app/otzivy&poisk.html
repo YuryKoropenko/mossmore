@@ -721,16 +721,24 @@
 							</div>
 							<div class="l-slider owl-carousel">
 								<div class="l-slider__item">
-									<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									<a href="#card-popup__slider" class="card-popup__link">
+										<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									</a>
 								</div>
 								<div class="l-slider__item">
-									<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									<a href="#card-popup__slider">
+										<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									</a>
 								</div>
 								<div class="l-slider__item">
-									<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									<a href="#card-popup__slider">
+										<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									</a>
 								</div>
 								<div class="l-slider__item">
-									<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									<a href="#card-popup__slider">
+										<img src="img/prods/slide.jpg" alt="" class="l-slider__img">
+									</a>
 								</div>
 							</div>
 							<div class="l-slider__nav">
@@ -1435,6 +1443,21 @@
 			</div>
 		</div>
 	</footer>
+	<div class="popup-img" id="card-popup__slider">
+		<div class="popup-img__wrapper">
+			<div class="popup-img__slider owl-carousel">
+				<div class="popup-img__item">
+					<img src="img/prods/1.jpg" alt="img" class="popup-img__img">
+				</div>
+				<div class="popup-img__item">
+					<img src="img/prods/1.jpg" alt="img" class="popup-img__img">
+				</div>
+				<div class="popup-img__item">
+					<img src="img/prods/1.jpg" alt="img" class="popup-img__img">
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
@@ -1445,7 +1468,16 @@
 			$('.card-tabs').lightTabs();
 			$('.r-description__coli-center').val('1');
 
+			$('.card-popup__link').fancybox();
 			$('.m-prods__text-1').fancybox();
+			$('.popup-img__slider').owlCarousel({
+				loop:true,
+				margin:0,
+				nav:true,
+				touchDrag: true,
+				dots: false,
+				items:1
+			});
 			$('.m-lmodel__list').owlCarousel({
 				loop:true,
 				margin:0,

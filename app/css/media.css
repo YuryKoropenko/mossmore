@@ -1142,6 +1142,9 @@
   .r-description__razm {
     padding-top: 10px;
   }
+  .popup-img {
+    width: 90%;
+  }
   /**/
 }
 

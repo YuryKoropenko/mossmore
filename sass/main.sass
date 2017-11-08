@@ -3642,3 +3642,36 @@ body
 
 body #modef
 	display: none !important
+
+/*card-popup*/
+
+#card-popup__slider
+	display: block
+
+.popup-img
+	width: 60%
+	padding: 0
+	&__wrapper
+	&__slider
+	&__item
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	.owl-nav
+	.owl-nav > div
+		width: 24px
+		height: 41px
+		display: block
+		z-index: 2
+		text-indent: -9999px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	.owl-prev
+		left: 26px
+		background-image: url(../img/icons/prev-arrow.png)
+	.owl-next
+		right: 26px
+		background-image: url(../img/icons/next-arrow.png)
