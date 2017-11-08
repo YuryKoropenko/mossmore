@@ -136,6 +136,12 @@ $(document).ready(function() {
 		});
 	}
 
+	$('.nav__search-link').on('click', function() {
+		$(this).hide();
+		$('.h-search').show();
+		return false
+	});
+
 
 	$('.personal__item-mob .personal__link-mob').on('click', function() {
 		$('.header__bottom').fadeToggle();
