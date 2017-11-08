@@ -4978,3 +4978,19 @@ body #modef {
   right: 26px;
   background-image: url(../img/icons/next-arrow.png);
 }
+
+.m-style__item {
+  padding-bottom: 176px;
+}
+
+.main__block {
+  padding-bottom: 0;
+}
+
+.m-style__loop {
+  bottom: 65px;
+}
+
+.m-style__item {
+  width: auto;
+}

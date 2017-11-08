@@ -853,14 +853,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="main__block main__block-bg hidden-xs hidden-sm">
+		<div class="main__block main__block-bg">
 			<img src="img/style/bg.jpg" alt="" class="m-style__bg">
 			<a href="#" class="main__block-close"></a>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="main__m-style">
-							<ul class="m-style">
+							<ul class="m-style owl-carousel">
 								<li class="m-style__item">
 									<a href="#" class="m-style__link">
 										<span class="m-style__title">
@@ -2106,6 +2106,14 @@
 				loop:true,
 				dots:false,
 				items:1,
+				responsive:{
+					992:{
+						items:3
+					},
+					767:{
+						items:2
+					}
+				}
 			});
 
 			$('.corzpopup__scroll').jScrollPane();
