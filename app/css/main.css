@@ -78,11 +78,6 @@ ol, ul {
   display: none;
 }
 
-.fancybox-is-open .fancybox-bg {
-  opacity: 1;
-  background-color: transparent;
-}
-
 .cardslider2,
 .cardslider3,
 .cardslider4 {
@@ -5005,14 +5000,13 @@ body #modef {
 .h-personal__link {
   background-image: url(../img/icons/porfil-active.png) !important;
   position: absolute;
+  top: -4px;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
 }
 
 .h-personal__right {
   text-align: left;
+  margin-top: 9;
 }
 
 .h-personal__name {
@@ -5020,6 +5014,9 @@ body #modef {
   display: block;
   color: #000;
   letter-spacing: 0.025em;
+  line-height: 20px;
+  position: relative;
+  top: -4px;
 }
 
 .h-personal__exit {
@@ -5028,6 +5025,9 @@ body #modef {
   text-decoration: underline;
   letter-spacing: 0.025em;
   color: rgba(0, 0, 0, 0.5);
+  line-height: 17px;
+  position: relative;
+  top: -4px;
 }
 
 .h-personal__exit:hover, .h-personal__exit:focus, .h-personal__exit:active {
