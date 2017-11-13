@@ -1677,6 +1677,14 @@ body {
   text-align: center;
 }
 
+.r-description__razm-list .selected label::before {
+  content: "\f00c" !important;
+  font-family: "FontAwesome";
+  line-height: 28px;
+  text-align: center;
+  font-size: 20px;
+}
+
 .r-description__razm-item {
   display: inline-block;
   vertical-align: middle;
@@ -3506,7 +3514,7 @@ body {
   position: relative;
   padding-left: 76px;
   min-height: 90px;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .m-steps__img {
