@@ -139,7 +139,13 @@ $(document).ready(function() {
 	$('.nav__search-link').on('click', function() {
 		$(this).hide();
 		$('.h-search').show();
-		return false
+		$(document).click(function(event) {
+			if ($(event.target).closest('.h-search').length) return;
+				$('.h-search').hide();
+				$('.nav__search-link').show();
+				event.stopPropagation();
+			});
+		return false;
 	});
 
 
@@ -248,6 +254,7 @@ $(document).ready(function() {
 		$('.m-prods__fprosm a').fancybox();
 		
 		$('.b-prods__fprosm a').fancybox();
+
 	}
 
 	$('.m-register__input-phone').mask("(999) 999-9999");
