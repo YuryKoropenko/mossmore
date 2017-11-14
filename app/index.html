@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.css">
+	<link rel="stylesheet" href="libs/animate.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -1434,12 +1435,15 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.indexSlider').owlCarousel({
+				animateOut: 'fadeOut',
+				animateIn: 'fadeIn',
 				loop:true,
 				margin:0,
 				nav:false,
 				touchDrag: true,
 				dots: false,
 				items:1,
+				autoplay: true,
 				responsive:{
 					767:{
 						dots: true
